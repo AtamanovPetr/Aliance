@@ -234,4 +234,9 @@ body {
   background: rgba(92, 142, 230, 1);
   width: 40px;
   margin-right: 20px;
+  transition: width 0.3s ease;
+}
+
+.steps-link:hover::before {
+  width: 60px;
 }
