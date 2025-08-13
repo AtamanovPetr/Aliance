@@ -11,8 +11,8 @@ body {
   font-family: "Noto Sans", sans-serif;
 }
 .container {
-  max-width: 1440px;
-  margin: auto;
+  max-width: 1455px;
+  margin: 0 auto;
 }
 .navbar {
   display: flex;
@@ -27,13 +27,13 @@ body {
   border-bottom: 1px solid rgba(235, 235, 240, 0.2);
   transition: background-color 0.2s, height 0.2s;
 }
-.navbar-light{
+.navbar-light {
   background-color: #fff;
   color: rgba(41, 45, 51, 1);
   border: none;
   height: 74px;
 }
-.navbar-light .header-logo-path{
+.navbar-light .header-logo-path {
   fill: rgba(41, 45, 51, 1);
 }
 
@@ -58,7 +58,7 @@ body {
 .header-image::before {
   content: "";
   position: absolute;
-  background-color: rgba(41, 45, 51, 0.5);
+  background-color: rgba(41, 45, 51, 0.555);
   top: 0;
   left: 0;
   width: 100%;
@@ -72,6 +72,10 @@ body {
   height: 100%;
   border-right: 1px solid rgba(235, 235, 240, 0.2);
 }
+.header-nav-item {
+  letter-spacing: 0.21px;
+  word-spacing: -0.3px;
+}
 .header-nav-link {
   text-decoration: none;
   font-size: 16px;
@@ -82,7 +86,7 @@ body {
   flex-shrink: 0;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 15px;
   margin-right: 50px;
 }
 
@@ -93,7 +97,7 @@ body {
 }
 
 .button {
-  padding: 25px 60px;
+  padding: 25px 46px;
   font-size: 16px;
   font-weight: 600;
   line-height: 22px;
@@ -111,6 +115,10 @@ body {
 .header-button {
   height: 100%;
 }
+.header-content-button {
+  padding: 26px 61px;
+  word-spacing: 0.2px;
+}
 
 .seporator {
   width: 150px;
@@ -120,6 +128,7 @@ body {
 
 .header-content {
   padding-top: 150px;
+  padding-left: 14px;
   position: relative;
   z-index: 1;
   color: #fff;
@@ -131,6 +140,8 @@ body {
   line-height: 120%;
   margin-top: 20px;
   margin-bottom: 30px;
+  word-spacing: -3px;
+  letter-spacing: 1px;
 }
 .header-text {
   max-width: 720px;
@@ -139,11 +150,14 @@ body {
   font-weight: 400;
   line-height: 160%;
   margin-bottom: 50px;
+  margin-top: 42px;
+  letter-spacing: 0.16px;
 }
 .header-features {
   display: flex;
   max-height: 168px;
   padding: 0;
+  padding-left: 14px;
   margin-top: 100px;
   margin-bottom: 0;
   list-style: none;
@@ -152,7 +166,10 @@ body {
 }
 
 .header-features-item {
-  padding: 31px 59px;
+  padding: 30px 50px;
+  letter-spacing: 0.06px;
+  word-spacing: 1px;
+  width: 290px;
   border: 1px solid rgba(235, 235, 240, 0.2);
 }
 
@@ -164,6 +181,7 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 160%;
+  margin-top: 18px;
   margin-bottom: 0;
   max-width: 169px;
 }
@@ -171,12 +189,18 @@ body {
   margin-top: 150px;
   margin-bottom: 150px;
 }
+.section-seporator{
+  margin-left: 14px;
+}
 
 .section-title {
   font-family: "Bebas Neue Book", sans-serif;
   font-size: 60px;
   line-height: 72px;
   color: rgba(41, 45, 51, 1);
+  margin-top: 25px;
+  padding-left: 14px;
+  letter-spacing: 0.35px;
 }
 
 .steps {
@@ -184,6 +208,7 @@ body {
   list-style: none;
   padding: 0;
   gap: 30px;
+  padding-left: 14px;
 }
 .steps-item {
   max-width: 330px;
@@ -197,6 +222,7 @@ body {
   display: flex;
   align-items: center;
   gap: 30px;
+  letter-spacing: 1px;
 }
 .steps-num::after {
   content: "";
@@ -209,17 +235,20 @@ body {
   font-size: 28px;
   font-weight: 400;
   line-height: 38px;
-  margin-top: 31px;
+  margin-top: 38px;
   margin-bottom: 10px;
+  letter-spacing: 0.27px;
 }
 
 .steps-text {
   color: rgba(130, 138, 153, 1);
   font-size: 16px;
   font-weight: 400;
-  line-height: 22px;
+  line-height: 25px;
   margin: 0;
-  margin-bottom: 20px;
+  margin-top: 17px;
+  margin-bottom: 23px;
+  letter-spacing: 0.2px;
 }
 .steps-link {
   display: flex;
@@ -229,10 +258,11 @@ body {
   font-size: 16px;
   font-weight: 600;
   line-height: 22px;
+  letter-spacing: 0.4px;
 }
 
-.steps-link::before{
-  content: '';
+.steps-link::before {
+  content: "";
   height: 1px;
   background: rgba(92, 142, 230, 1);
   width: 40px;
