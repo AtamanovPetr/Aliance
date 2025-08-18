@@ -40,7 +40,8 @@ body {
   border: none;
   height: 4.625rem;
 }
-.phone-icon, .mark-icon {
+.phone-icon,
+.mark-icon {
   fill: rgb(91.8, 141.525, 229.5);
 }
 .logo-svg {
@@ -60,7 +61,7 @@ body {
 }
 .header {
   padding-top: 5.875rem;
-  min-height: 100vh;
+
 }
 .header-image {
   background-image: url(../img/bg.png);
@@ -171,10 +172,8 @@ body {
 }
 .header-features {
   display: flex;
-  max-height: 10.5rem;
   padding: 0;
   margin-top: 6.25rem;
-  margin-bottom: 0;
   list-style: none;
   color: #fff;
   position: relative;
@@ -182,15 +181,28 @@ body {
 
 .header-features-item {
   padding: 1.875rem 3.125rem;
+  min-height: 175px;
   letter-spacing: 0.06px;
   word-spacing: 1px;
-  width: 18.125rem;
   border: 1px solid rgba(235, 235, 240, 0.2);
 }
-
-.header-features-item:not(:last-child) {
-  border-right: none;
+.slider-buttons {
+  display: none;
+  height: 44px;
 }
+
+.slider-button-next,
+.slider-button-prev {
+  height: 100%;
+  flex-basis: 50%;
+  border: 1px solid rgba(235, 235, 240, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 2;
+}
+
 
 .header-features-text {
   font-size: 1rem;
@@ -325,6 +337,9 @@ body {
     padding-left: 2rem;
     padding-right: 2rem;
   }
+  .slider-buttons {
+    display: flex;
+  }
 }
 
 @media (max-width: 992px) {
@@ -435,7 +450,8 @@ body {
     gap: 1rem;
     margin-bottom: 1rem;
   }
-  .mobile-info-address, .mobile-info-email {
+  .mobile-info-address,
+  .mobile-info-email {
     font-style: normal;
     font-size: 14px;
     font-weight: 400;
@@ -443,7 +459,7 @@ body {
     text-decoration: none;
     color: rgba(41, 45, 51, 1);
   }
-  .mobile-info-icons{
+  .mobile-info-icons {
     display: flex;
     gap: 0.9rem;
     margin-top: 1.3rem;
@@ -456,5 +472,31 @@ body {
   }
   .close-menu .mobile-menu-line:nth-child(3) {
     transform: rotate(-45deg) translateY(-9px);
+  }
+  .slider-buttons {
+    margin-top: 1.5rem;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 40rem;
+  }
+  .header-title {
+    font-size: 4rem;
+  }
+  .header-content {
+    padding-top: 3rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 90%;
+  }
+  .header-title {
+    font-size: 2rem;
+  }
+  .header-content {
+    padding-top: 2rem;
   }
 }

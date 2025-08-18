@@ -16,7 +16,7 @@ const lightModeOff = (event) => {
 const openMenu = (event) => {
   //функция открывания меню
   menu.classList.add("is-open"); // вешает класс is-open
-  mMenuToggle.classList.add("close-menu"); 
+  mMenuToggle.classList.add("close-menu");
   document.body.style.overflow = "hidden";
   lightModeOn();
 };
@@ -24,16 +24,43 @@ const openMenu = (event) => {
 const closeMenu = (event) => {
   //функция закрывания меню
   menu.classList.remove("is-open"); // удалить класс is-open
-  mMenuToggle.classList.remove("close-menu"); 
+  mMenuToggle.classList.remove("close-menu");
   document.body.style.overflow = "";
   lightModeOff();
 };
 
 window.addEventListener("scroll", () => {
-  this.scrollY > 1 ? lightModeOn(): lightModeOff();
+  this.scrollY > 1 ? lightModeOn() : lightModeOff();
 });
 
 mMenuToggle.addEventListener("click", (event) => {
   event.preventDefault();
   menu.classList.contains("is-open") ? closeMenu() : openMenu();
+});
+
+const swiper = new Swiper(".swiper-container", {
+  speed: 400,
+  autoHeight: true,
+  slidesPerView: 1,
+  breakpoints: {
+    // when window width is >= 320px
+    576: {
+      slidesPerView: 2,
+    },
+    // when window width is >= 480px
+    768: {
+      slidesPerView: 3,
+    },
+    // when window width is >= 640px
+    1024: {
+      slidesPerView: 4,
+    },
+    1200: {
+      slidesPerView: 5,
+    }
+  },
+  navigation: {
+    nextEl: ".slider-button-next",
+    prevEl: ".slider-button-prev",
+  },
 });
