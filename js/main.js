@@ -43,6 +43,7 @@ mMenuToggle.addEventListener("click", (event) => {
 
 const swiperSteps = new Swiper(".steps-slider", {
   speed: 400,
+  watchSlidesVisibility: true,
   slidesPerView: 1,
   breakpoints: {
     // when window width is >= 320px
@@ -70,6 +71,7 @@ const swiperSteps = new Swiper(".steps-slider", {
 const swiper = new Swiper(".features-slider", {
   speed: 400,
   slidesPerView: 1,
+  watchSlidesVisibility: true,
   breakpoints: {
     // when window width is >= 320px
     576: {
