@@ -519,4 +519,7 @@ body {
   .header-content {
     padding-top: 2rem;
   }
+  .section-title{
+    font-size: 30px;
+  }
 }
