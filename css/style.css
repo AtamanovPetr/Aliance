@@ -44,6 +44,9 @@ body {
 .mark-icon {
   fill: rgb(91.8, 141.525, 229.5);
 }
+.logo{
+  display: none;
+}
 .logo-svg {
   height: 2.75rem;
 }
