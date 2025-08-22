@@ -223,7 +223,7 @@ body {
 .section-title {
   font-family: "Bebas Neue Book", sans-serif;
   font-size: 3.75rem;
-  line-height: 4.5rem;
+  line-height: 130%;
   color: rgba(41, 45, 51, 1);
   margin-top: 1.5625rem;
   letter-spacing: 0.35px;
@@ -316,6 +316,42 @@ body {
   cursor: pointer;
 }
 
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex-basis: 33%;
+  border: 1px solid rgba(235, 235, 240, 1);
+  position: relative;
+}
+.card-image {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+}
+.card-content {
+  padding: 2.5rem 3.125rem;
+}
+.card-title {
+  font-size: 1.75rem;
+  font-weight: 400;
+  line-height: 140%;
+  color: rgba(41, 45, 51, 1);
+  margin: 0;
+  margin-bottom: 10px;
+}
+.card-text {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 22px;
+  color: rgba(130, 138, 153, 1);
+  margin-bottom: 24.625rem;
+}
+
 @media (max-width: 1700px) {
   html {
     font-size: 14px;
@@ -362,6 +398,9 @@ body {
   }
   .steps-buttons {
     display: flex;
+  }
+  .card{
+    flex-basis: 50%;
   }
 }
 
@@ -507,6 +546,9 @@ body {
   .header-content {
     padding-top: 3rem;
   }
+  .card{
+    flex-basis: 100%;
+  }
 }
 
 @media (max-width: 576px) {
@@ -519,7 +561,7 @@ body {
   .header-content {
     padding-top: 2rem;
   }
-  .section-title{
+  .section-title {
     font-size: 30px;
   }
 }
