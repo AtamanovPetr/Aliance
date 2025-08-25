@@ -610,8 +610,9 @@ body {
     line-height: 155%;
   }
   .header-content-button {
-    padding: 1.8rem 7.3rem;
-    font-size: 1.1rem;
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
   }
   .header-features {
     margin-top: 4rem;
