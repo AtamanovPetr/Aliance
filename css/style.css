@@ -111,17 +111,17 @@ body {
   color: inherit;
   position: relative;
 }
-.header-nav-link:after{
-  content: '';
+.header-nav-link:after {
+  content: "";
   width: 100%;
   height: 2px;
   position: absolute;
   bottom: -1px;
-  background-color: #5C8EE6;
+  background-color: #5c8ee6;
   transform: scaleX(0);
   transition: transform 0.2s;
 }
-.header-nav-link:hover::after{
+.header-nav-link:hover::after {
   transform: scaleX(1);
 }
 .header-phone {
@@ -314,13 +314,13 @@ body {
   content: "";
   height: 1px;
   background: rgba(92, 142, 230, 1);
-  width: 2.5rem;
+  width: 3.5rem;
   margin-right: 1.25rem;
   transition: width 0.3s ease;
 }
 
 .steps-link:hover::before {
-  width: 3.75rem;
+  width: 4.75rem;
 }
 
 .steps-buttons {
@@ -352,11 +352,11 @@ body {
   position: relative;
   transition: border 0.2s;
 }
-.card:hover .card-title{
-  color: #5C8EE6;
+.card:hover .card-title {
+  color: #5c8ee6;
 }
-.card:hover{
-  border-color: #5C8EE6;
+.card:hover {
+  border-color: #5c8ee6;
 }
 .card-image {
   width: 100%;
@@ -399,7 +399,7 @@ body {
     padding: 2rem;
   }
   .logo-svg {
-    max-width: 6rem;
+    max-width: 10rem;
   }
   .header-nav {
     padding-left: 2rem;
@@ -420,7 +420,7 @@ body {
     display: none;
   }
   .navbar {
-    height: 5rem;
+    height: 5.6rem;
   }
   .navbar-button {
     padding-left: 2rem;
@@ -451,13 +451,16 @@ body {
     flex-grow: 1;
     justify-content: center;
   }
+  .logo-svg {
+    max-width: 9rem;
+  }
   .mobile-menu-toggle {
     width: 80px;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 1.8rem;
+    padding: 2.2rem 2.5rem;
     border-right: 1px solid rgba(235, 235, 240, 0.2);
   }
   .navbar-light .mobile-menu-line {
@@ -471,6 +474,10 @@ body {
   }
   .mobile-menu-line:nth-child(2) {
     width: 80%;
+  }
+  .navbar-button {
+    padding-left: 2.7rem;
+    padding-right: 2.5rem;
   }
   .navbar-button .button-text {
     display: none;
@@ -586,15 +593,82 @@ body {
 
 @media (max-width: 576px) {
   .container {
-    max-width: 90%;
-  }
-  .header-title {
-    font-size: 2rem;
+    max-width: 95%;
   }
   .header-content {
-    padding-top: 2rem;
+    padding-top: 4rem;
+  }
+  .header-title {
+    letter-spacing: 0.6px;
+    margin-bottom: 0;
+  }
+  .header-text {
+    margin-top: 1.5rem;
+    margin-bottom: 2.6rem;
+    font-size: 1.17rem;
+    word-spacing: 3.23px;
+    line-height: 155%;
+  }
+  .header-content-button {
+    padding: 1.8rem 7.3rem;
+    font-size: 1.1rem;
+  }
+  .header-features {
+    margin-top: 4rem;
+  }
+  .header-features-text {
+    margin-top: 1.3rem;
+    word-spacing: -0.2px;
+    font-size: 1.2rem;
+    max-width: 155px;
+  }
+  .header-features-item {
+    padding: 1.8rem 2.5rem;
   }
   .section-title {
-    font-size: 30px;
+    font-size: 31px;
+  }
+  .slider-button-prev,
+  .slider-button-next {
+    padding-top: 7px;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+  }
+  .seporator {
+    width: 8.375rem;
+  }
+  .section {
+    margin-top: 8.1rem;
+    margin-bottom: 8rem;
+  }
+  .section-title {
+    letter-spacing: 2.6px;
+    margin-bottom: 3.2rem;
+  }
+  .steps-num {
+    font-size: 4rem;
+  }
+  .steps-title {
+    margin-top: 2rem;
+    letter-spacing: -0.4px;
+  }
+  .steps-text {
+    margin-top: 0.7rem;
+    font-size: 1.2rem;
+    line-height: 145%;
+    letter-spacing: -0.1px;
+  }
+  .steps-item {
+    max-width: 25.625rem;
+  }
+  .steps-button-next, .steps-button-prev{
+    width: 61px;
+  }
+  .steps-link{
+    margin-top: 2.5rem;
+    font-size: 1.2rem;
+  }
+  .production{
+    margin-top: 0rem;
   }
 }
