@@ -839,6 +839,6 @@ body {
     columns: 1;
   }
   .clients-logo-item{
-    flex-basis: 0%;
+    flex-basis: 50%;
   }
 }
