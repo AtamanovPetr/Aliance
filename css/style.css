@@ -472,7 +472,7 @@ body {
 
 .founder-text {
   color: var(--txt2, rgba(130, 138, 153, 1));
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 160%;
 }
@@ -1017,15 +1017,20 @@ body {
       "text text";
   }
   .trademark-card {
-    grid-template-rows: 60% 2fr;
+    grid-template-rows: 38% 2fr;
     grid-template-columns: 80px auto;
     grid-column-gap: 2.125rem;
+    max-height: 268px;
   }
   .trademark-card-logo {
-    width: 110px;
+    justify-self: flex-start;
+    align-self: flex-start;
   }
   .trademark-card-title {
     text-align: right;
+  }
+  .trademark-title{
+    margin-bottom: 2.2rem;
   }
   .clients-list {
     columns: 1;
@@ -1046,22 +1051,57 @@ body {
     flex-wrap: wrap;
   }
   .production-title {
-    margin-bottom: 16.5px;
+    margin-bottom: 28px;
   }
-  .card-content {
-    padding: 1.5rem 2.8rem;
-  }
-  .input-group-label{
+  .input-group-label {
     top: 2rem;
     left: 1.5rem;
   }
-  .cta-form-footer{
+  .cta-form-footer {
     margin-top: 10px;
   }
-  .notify{
+  .notify {
     width: 100%;
   }
-  .notify-text{
+  .notify-text {
     width: 250px;
+  }
+  .card-content {
+    height: 428px;
+  }
+  .card-content {
+    padding: 1.4rem 2.5rem;
+  }
+  .card-title{
+    width: 270px;
+    letter-spacing: -0.5px;
+    line-height: 130%;
+    margin-bottom: 0;
+  }
+  .card-text{
+    margin-top: 10px;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+  }
+  .founder-photo{
+    margin-bottom: 0;
+  }
+  .founder-title{
+    width: 235px;
+    margin-bottom: 0;
+  }
+  .founder-text{
+    font-size: 14px;
+    letter-spacing: 0.1px;
+    word-spacing: 1.2px;
+    line-height: 155%;
+  }
+  .founder-link{
+    font-size: 14px;
+    margin-top: 25px;
+  }
+  .founder-link::before{
+    width: 40px;
+    margin-right: 1.85rem;
   }
 }
