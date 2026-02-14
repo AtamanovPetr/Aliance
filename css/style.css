@@ -44,15 +44,24 @@ body {
   background-color: #fff;
   color: rgba(41, 45, 51, 1);
   border: none;
+}
+.logo-dark {
+  display: none;
+}
+.navbar-light .logo-light {
+  display: none;
+}
+.navbar-light .logo-dark {
+  display: block;
+}
+.navbar-scroll {
   height: 4.625rem;
 }
 .phone-icon,
 .mark-icon {
   fill: rgb(91.8, 141.525, 229.5);
 }
-.logo {
-  display: none;
-}
+
 .logo-svg {
   height: 2.75rem;
 }
