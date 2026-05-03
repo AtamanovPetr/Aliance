@@ -911,9 +911,45 @@ body {
   width: 100%;
 }
 
+/* Стили для заголовков внутренних страниц */
+.title-wrap {
+  display: flex;
+}
+.title {
+  background-color: rgba(240, 242, 245, 1);
+  margin-top: 5.875rem;
+  padding-top: 3.125rem;
+  padding-bottom: 3.125rem;
+}
+.title-margin {
+  margin-bottom: 20px;
+}
+.bread {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.bread-main {
+  color: var(--txt2, rgba(130, 138, 153, 1));
+  text-decoration: none;
+}
+.bread-second {
+  text-decoration: none;
+  color: var(--txt, rgba(41, 45, 51, 1));
+}
+.slash {
+  background-color: var(--txt2, rgba(130, 138, 153, 1));
+  height: 2px;
+  width: 13px;
+}
+/* конец */
+
 @media (max-width: 1700px) {
   html {
     font-size: 14px;
+  }
+  .header-logo {
+    padding: 1.8rem;
   }
 }
 
@@ -922,10 +958,10 @@ body {
     font-size: 13px;
   }
   .header-logo {
-    padding: 2rem;
+    padding: 0rem;
   }
   .logo-svg {
-    max-width: 10rem;
+    max-width: 8rem;
   }
   .header-nav {
     padding-left: 2rem;
