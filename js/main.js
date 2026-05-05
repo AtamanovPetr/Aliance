@@ -152,3 +152,35 @@ document.addEventListener("keyup", (event) => {
     modal.classList.toggle("is-open");
   }
 });
+
+document.querySelectorAll(".js-form").forEach((form) => {
+  form.addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    const btn = this.querySelector("button");
+    const btnText = btn.innerText;
+    btn.disabled = true;
+    btn.innerText = "Отправка...";
+
+    try {
+      const response = await fetch("handler.php", {
+        method: "POST",
+        body: new FormData(this),
+      });
+
+      const result = await response.text();
+
+      if (result.trim() === "Некит") {
+        alert("Заявка успешно отправлена!");
+        this.reset();
+      } else {
+        alert("Ошибка сервера. Попробуйте еще раз.");
+      }
+    } catch (error) {
+      alert("Ошибка сети.");
+    } finally {
+      btn.disabled = false;
+      btn.innerText = btnText;
+    }
+  });
+});

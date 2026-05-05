@@ -603,7 +603,7 @@
           ответит на все интересующие вопросы и поможем даже в самых сложных
           случаях!
         </p>
-        <form action="" class="modal-form">
+        <form action="handler.php" class="modal-form js-form" method="POST">
           <div class="input-group-wrapper input-group-vertical">
             <div class="input-group modal-input-group">
               <input
@@ -611,6 +611,7 @@
                 type="text"
                 class="input modal-input"
                 placeholder=" "
+                name="username"
               />
               <label
                 class="input-group-label modal-input-label"
@@ -624,6 +625,7 @@
                 type="tel"
                 class="input modal-input"
                 placeholder=" "
+                name="userphone"
               />
               <label
                 class="input-group-label modal-input-label"
@@ -646,6 +648,7 @@
               </p>
             </div>
           </div>
+          <input type="hidden" name="form_subject" value="Заявка из модального окна">
         </form>
       </div>
     </div>

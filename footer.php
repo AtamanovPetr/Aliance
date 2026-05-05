@@ -2,7 +2,7 @@
       <div class="bg-grey section-cta">
         <img src="img/cta.png" alt="" class="cta-image" />
         <div class="cta-form-wrapper container">
-          <form action="handler.php" class="cta-form" method='POST'>
+          <form action="handler.php" class="cta-form js-form" method='POST'>
             <h2 class="section-title cta-form-title">Хотите сотрудничать?</h2>
             <p class="cta-form-text">
               Оставьте заявку, наш менеджер свяжется с Вами в ближайшее время
@@ -17,6 +17,8 @@
                   class="input"
                   name="username"
                   placeholder=" "
+                  maxlength='100'
+                  required
                 />
                 <label class="input-group-label" for="username">Имя</label>
               </div>
@@ -27,6 +29,8 @@
                   class="input"
                   name="userphone"
                   placeholder=" "
+                  maxlength='30'
+                  required
                 />
                 <label class="input-group-label" for="userphone"
                   >Номер телефона</label
@@ -47,6 +51,7 @@
                 </p>
               </div>
             </div>
+            <input type="hidden" name="form_subject" value="Заявка из подвала сайта">
           </form>
         </div>
       </div>
