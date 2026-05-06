@@ -164,7 +164,7 @@
             будущего проекта напрямую зависит от анализа существующих паттернов
             поведения.
           </p>
-          <div class="header-content-button button">Подробнее о компании</div>
+          <div data-toggle="modal" class="header-content-button button">Подробнее о компании</div>
         </div>
 
         <div class="swiper-container features-slider">
@@ -588,72 +588,5 @@
       </div>
     </section>
 
+
     <?php include_once('footer.php');?>
-
-    <div class="modal">
-      <div class="modal-dialog">
-        <h2 class="modal-title">Есть вопросы?</h2>
-        <a href="#" class="modal-close" data-toggle="modal">
-          <svg class="close-icon" width="24" height="24">
-            <use href="img/sprite.svg#close"></use>
-          </svg>
-        </a>
-        <p class="modal-text">
-          Оставьте заявку, наш менеджер свяжется c Вами в ближайшее время
-          ответит на все интересующие вопросы и поможем даже в самых сложных
-          случаях!
-        </p>
-        <form action="handler.php" class="modal-form js-form" method="POST">
-          <div class="input-group-wrapper input-group-vertical">
-            <div class="input-group modal-input-group">
-              <input
-                id="modal-username"
-                type="text"
-                class="input modal-input"
-                placeholder=" "
-                name="username"
-              />
-              <label
-                class="input-group-label modal-input-label"
-                for="modal-username"
-                >Имя</label
-              >
-            </div>
-            <div class="input-group modal-input-group">
-              <input
-                id="modal-userphone"
-                type="tel"
-                class="input modal-input"
-                placeholder=" "
-                name="userphone"
-              />
-              <label
-                class="input-group-label modal-input-label"
-                for="modal-userphone"
-                >Номер телефона</label
-              >
-            </div>
-          </div>
-          <div class="modal-form-footer">
-            <button type="submit" class="button modal-form-button">
-              Отправить заявку
-            </button>
-            <div class="notify">
-              <svg class="notify-icon" width="14" height="14">
-                <use href="img/sprite.svg#shield"></use>
-              </svg>
-              <p class="notify-text">
-                Обращаясь к нам вы получаете не только профессиональную работу,
-                но и абсолютную конфиденциальность информации!
-              </p>
-            </div>
-          </div>
-          <input type="hidden" name="form_subject" value="Заявка из модального окна">
-        </form>
-      </div>
-    </div>
-
-    <script src="js/swiper-bundle.min.js"></script>
-    <script src="./js/main.js"></script>
-  </body>
-</html>
