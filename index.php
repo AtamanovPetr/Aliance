@@ -123,7 +123,7 @@
           <a href="./about.php" class="header-nav-link">О компании</a>
         </li>
         <li class="header-nav-item">
-          <a href="#" class="header-nav-link">Контрактное производство</a>
+          <a href="./contracts.php" class="header-nav-link">Контрактное производство</a>
         </li>
         <li class="header-nav-item">
           <a href="#" class="header-nav-link">Собственные торговые марки</a>
@@ -353,36 +353,7 @@
       </div>
     </section>
 
-    <section class="section trademark">
-      <div class="container">
-        <div class="seporator"></div>
-        <h2 class="section-title trademark-title">собственные марки</h2>
-        <div class="trademark-cards">
-          <div class="trademark-card">
-            <svg class="trademark-card-logo">
-              <use href="img/sprite.svg#agtech"></use>
-            </svg>
-            <h3 class="trademark-card-title">Автохимия AG-Tech</h3>
-            <p class="trademark-card-text">
-              Для современного мира разбавленное изрядной долей эмпатии,
-              рациональное мышление создаёт предпосылки для поставленных
-              обществом задач.
-            </p>
-          </div>
-          <div class="trademark-card">
-            <svg class="trademark-card-logo">
-              <use href="img/sprite.svg#ap"></use>
-            </svg>
-            <h3 class="trademark-card-title">Автохимия AP</h3>
-            <p class="trademark-card-text">
-              Для современного мира разбавленное изрядной долей эмпатии,
-              рациональное мышление создаёт предпосылки для поставленных
-              обществом задач.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+    <?php $block_title = "Собственные торговые марки"; include_once('./templates/trademarks-block.php') ?>
 
     <section class="section founder">
       <div class="founder-image">
