@@ -1,3 +1,5 @@
+
+
 <!doctype html>
 <html lang="ru">
   <head>
@@ -150,19 +152,47 @@
       </button>
     </nav>
 
-    <section class="title <?= $header_style?>">
-      <div class="container">
-        <div class="title-wrap">
-          <div class="title-content">
-            <div class="seporator"></div>
-            <h1 class="header-title title-margin"><?= $page_title?></h1>
-            <div class="bread">
-              <a class="bread-main" href="/index.php">Главная</a>
-              <div class="slash"></div>
-              <a class="bread-second" href="#"><?= $page_title?></a>
+<section class="title <?= $header_style ?>">
+    <div class="container">
+        <div class="title-wrappp">
+          <div class="title-wrap">
+            <div class="title-content">
+                <div class="seporator"></div>
+                
+                <h1 class="header-title title-margin"><?= $page_title ?></h1>
+                
+                <div class="bread">
+                    <?php 
+                    $count = count($breadcrumbs);
+                    $i = 1;
+                    foreach ($breadcrumbs as $title => $link): 
+                        $is_last = ($i == $count);
+                        $class = ($i == 1) ? 'bread-main' : 'bread-second';
+                        if ($is_last) $class .= ' active';
+                    ?>
+                        <a class="<?= $class ?>" href="<?= $link ?>">
+                            <?= $title ?>
+                        </a>
+
+                        <?php if (!$is_last): ?>
+                            <span class="line-separator"></span> 
+                        <?php endif; ?>
+
+                    <?php 
+                        $i++;
+                    endforeach; 
+                    ?>
+                </div>
             </div>
-          </div>
+            <?php if (!empty($header_image)): ?>
+                <div class="title-image">
+                    <img src="<?= $header_image ?>" alt="<?= $page_title ?>">
+                </div>
+            <?php endif; ?>
         </div>
-      </div>
-    </section>
+        </div>
+    </div>
+</section>
+
+
   

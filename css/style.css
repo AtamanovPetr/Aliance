@@ -912,37 +912,123 @@ body {
 }
 
 /* Стили для заголовков внутренних страниц */
+.title-wrappp {
+  position: relative;
+}
 .title-wrap {
   display: flex;
 }
 .title {
   background-color: rgba(240, 242, 245, 1);
   margin-top: 5.875rem;
+}
+.title-content {
   padding-top: 3.125rem;
   padding-bottom: 3.125rem;
 }
 .title-margin {
   margin-bottom: 20px;
 }
+.title-image {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  max-height: 15rem;
+}
+/* Контейнер для крошек */
+.bread {
+  display: flex; /* Выстраивает элементы в одну строку */
+  align-items: center;
+  flex-wrap: wrap; /* Если крошек много, они перенесутся на новую строку */
+  gap: 8px; /* Расстояние между элементами */
+}
+
+/* Все ссылки по умолчанию серые */
+/* Контейнер: выравниваем всё в ряд по центру */
 .bread {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px; /* Отступы между словами и палочкой */
 }
-.bread-main {
-  color: var(--txt2, rgba(130, 138, 153, 1));
-  text-decoration: none;
+
+/* Стили горизонтальной палочки */
+.line-separator {
+  display: inline-block;
+  width: 15px; /* Длина палочки — подберите по макету */
+  height: 1px; /* Толщина линии */
+  background-color: #999; /* Цвет палочки (серый) */
+  flex-shrink: 0; /* Чтобы палочка не сжималась */
 }
+
+/* Ссылки (кроме последней) */
+.bread-main,
 .bread-second {
   text-decoration: none;
+  color: #999; /* Серый цвет */
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+/* Последняя крошка (активная) */
+.active {
+  color: #000 !important; /* Черный цвет */
+  pointer-events: none; /* Делаем некликабельной */
+}
+
+/* Ховер для ссылок, которые можно нажать */
+.bread-main:hover,
+.bread-second:hover:not(.active) {
+  color: #666;
+}
+
+/* конец */
+
+/* Features Slider*/
+.features-white .header-features-text {
+  color: #ffffff;
+}
+.features-black .header-features-text {
   color: var(--txt, rgba(41, 45, 51, 1));
 }
-.slash {
-  background-color: var(--txt2, rgba(130, 138, 153, 1));
-  height: 2px;
-  width: 13px;
+.features-black .slider-buttons {
+  fill: var(--txt, rgba(41, 45, 51, 1));
+  stroke: var(--txt, rgba(41, 45, 51, 1));
 }
-/* конец */
+
+/* Картинка в заголовке */
+
+/* Секция с картинкой и заголовком auto ag-tech */
+.auto-him-main {
+  margin-top: 6.25rem;
+}
+.auto-him-main-wrap {
+  display: flex;
+  gap: 120px;
+}
+
+.auto-him-main-wrap-item-title {
+  font-size: 3.75rem;
+}
+.auto-him-main-wrap-item {
+  align-self: center;
+}
+.auto-him-main-wrap-item p {
+  margin-bottom: 0;
+  color: var(--txt2, rgba(130, 138, 153, 1));
+  font-family: "Noto Sans";
+  font-style: Regular;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.375rem;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.auto-him-wrap-img {
+  width: 40%;
+  height: 100%;
+  object-fit: cover;
+}
 
 @media (max-width: 1700px) {
   html {
@@ -950,6 +1036,9 @@ body {
   }
   .header-logo {
     padding: 1.8rem;
+  }
+  .container {
+    max-width: 85rem;
   }
 }
 
@@ -1026,6 +1115,9 @@ body {
   }
   .footer-menu-column-2 {
     min-width: 45rem;
+  }
+  .title-image {
+    display: none;
   }
 }
 
@@ -1176,6 +1268,17 @@ body {
   .footer-menu-column-2 {
     min-width: 35rem;
   }
+  .auto-him-main-wrap {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+  .auto-him-wrap-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+  }
 }
 @media (max-width: 768px) {
   .container {
@@ -1222,7 +1325,6 @@ body {
   }
   .header-title {
     letter-spacing: 0.6px;
-    margin-bottom: 0;
   }
   .header-text {
     margin-top: 1.5rem;
@@ -1469,5 +1571,8 @@ body {
   .trademark-card {
     grid-template-columns: 90px auto;
     padding: 1.6rem;
+  }
+  .auto-him-main {
+    margin-top: 4rem;
   }
 }
