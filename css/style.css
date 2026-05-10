@@ -971,8 +971,7 @@ body {
 
 /* Последняя крошка (активная) */
 .active {
-  color: #000 !important; /* Черный цвет */
-  pointer-events: none; /* Делаем некликабельной */
+  color: #000; /* Черный цвет */
 }
 
 /* Ховер для ссылок, которые можно нажать */
@@ -1096,6 +1095,61 @@ body {
 .contract-cards {
   margin-top: 6.25rem;
 }
+/* Avto-chem page */
+.create-img {
+  position: absolute;
+  right: 0;
+  width: 40%;
+  height: 75%;
+  object-fit: cover;
+}
+.create-wrapper {
+  display: flex;
+  align-items: center;
+  min-height: 660px;
+}
+
+/* Секция species */
+.species {
+  margin-top: 9.375rem;
+}
+.species-slash {
+  background-color: var(--main, rgba(92, 142, 230, 1));
+  height: 2px;
+  width: 15px;
+}
+.species-list {
+  list-style: none;
+  padding: 0;
+  columns: 4 auto;
+}
+.species-text {
+  max-width: 52.5rem;
+}
+
+/* Страница news */
+.news {
+  margin-top: 6.25rem;
+}
+.news-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.news-card {
+  max-width: 43.75rem;
+  margin: 0;
+}
+
+/* Страница blog-more */
+.title.blog-more-bg {
+  background-image: url("/img/blog-more-bg.png");
+  color: #fff;
+}
+.blog-more-bg .bread-main,
+.blog-more-bg .bread-second {
+  color: #ffffff;
+}
 
 @media (max-width: 1700px) {
   html {
@@ -1185,6 +1239,11 @@ body {
   }
   .title-image {
     display: none;
+  }
+  .create-img {
+    position: relative;
+    width: 100%;
+    margin-bottom: 1.25rem;
   }
 }
 
@@ -1348,6 +1407,9 @@ body {
   }
   .explore-text:nth-of-type(2) {
     display: none;
+  }
+  .species-list {
+    columns: 2 auto;
   }
 }
 @media (max-width: 768px) {
@@ -1644,5 +1706,11 @@ body {
   }
   .auto-him-main {
     margin-top: 4rem;
+  }
+  .distribute-content-title {
+    margin-bottom: 0;
+  }
+  .species-list {
+    columns: 1 auto;
   }
 }

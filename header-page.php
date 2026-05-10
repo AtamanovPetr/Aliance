@@ -130,7 +130,7 @@
           <a href="./trademarks.php" class="header-nav-link">Собственные торговые марки</a>
         </li>
         <li class="header-nav-item">
-          <a href="#" class="header-nav-link">Новости</a>
+          <a href="./blog.php" class="header-nav-link">Новости</a>
         </li>
         <li class="header-nav-item">
           <a href="#" class="header-nav-link">Контакты</a>
