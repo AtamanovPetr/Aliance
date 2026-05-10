@@ -12,5 +12,6 @@ $breadcrumbs = [
 ];
  include_once('header-page.php');
  include_once('./templates/img-text.php');
+  include_once('./templates/explore.php');
  include_once('footer.php');
  ?>
