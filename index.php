@@ -21,13 +21,13 @@ $blog_header = 'Блог экспертов в области производс
     <div class="mobile-menu">
       <ul class="mobile-menu-nav">
         <li class="mobile-menu-nav-item">
-          <a href="#" class="mobile-menu-link">О компании</a>
+          <a href="./about.php" class="mobile-menu-link">О компании</a>
         </li>
         <li class="mobile-menu-nav-item">
-          <a href="#" class="mobile-menu-link">Контрактное производство</a>
+          <a href="./contracts.php" class="mobile-menu-link">Контрактное производство</a>
           <ul class="mobile-submenu">
             <li class="mobile-submenu-item">
-              <a class="mobile-submenu-link" href="#">Автомобильная химия</a>
+              <a class="mobile-submenu-link" href="./auto-chem.php">Автомобильная химия</a>
             </li>
 
             <li class="mobile-submenu-item">
@@ -57,10 +57,10 @@ $blog_header = 'Блог экспертов в области производс
         </li>
 
         <li class="mobile-menu-nav-item">
-          <a href="#" class="mobile-menu-link">Собственные марки</a>
+          <a href="./trademarks.php" class="mobile-menu-link">Собственные марки</a>
           <ul class="mobile-submenu">
             <li class="mobile-submenu-item">
-              <a class="mobile-submenu-link" href="#">Автохимия AG-Tech</a>
+              <a class="mobile-submenu-link" href="./auto-him.php">Автохимия AG-Tech</a>
             </li>
 
             <li class="mobile-submenu-item">
@@ -69,7 +69,7 @@ $blog_header = 'Блог экспертов в области производс
           </ul>
         </li>
         <li class="mobile-menu-nav-item">
-          <a href="#" class="mobile-menu-link">Новости</a>
+          <a href="./blog.php" class="mobile-menu-link">Новости</a>
         </li>
         <li class="mobile-menu-nav-item">
           <a href="#" class="mobile-menu-link">Контакты</a>

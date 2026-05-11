@@ -1150,6 +1150,100 @@ body {
 .blog-more-bg .bread-second {
   color: #ffffff;
 }
+.blog-more-main {
+  margin-top: 6.25rem;
+}
+.blog-more-main-wrapper {
+  display: flex;
+  gap: 15.625rem;
+}
+.blog-more-main-item:first-child {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.vk-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.vk-wrapper a {
+  color: #5b8dff; /* Базовый цвет иконок (т.к. в спрайте currentColor) */
+  transition: color 0.3s ease; /* Плавная смена цвета */
+  text-decoration: none;
+  border: 1px solid var(--sep, rgba(235, 235, 240, 1));
+  padding: 0.8125rem;
+}
+/* Ховер эффект: красим в черный */
+.vk-wrapper a:hover {
+  color: #000000; /* Иконка станет черной при наведении */
+  border: 1px solid #5b8dff;
+}
+
+/* Убедимся, что SVG наследует цвет от ссылки */
+.vk-icon {
+  fill: currentColor;
+}
+.blog-more-main-item p {
+  color: var(--txt2, rgba(130, 138, 153, 1));
+  font-family: "Noto Sans";
+  font-style: SemiBold;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.375rem;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.blog-more-main-item h2 {
+  color: var(--txt, rgba(41, 45, 51, 1));
+  font-size: 2.25rem;
+  font-weight: 400;
+  line-height: 3.0625rem;
+}
+.blog-more-main-item:last-child p {
+  color: var(--txt, rgba(41, 45, 51, 1));
+  font-family: "Noto Sans";
+  font-style: Regular;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.blog-more-list-header {
+  color: var(--txt, rgba(41, 45, 51, 1));
+  font-family: "Noto Sans";
+  font-style: Regular;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.blog-more-list-wrapper {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.blog-more-list-item {
+  display: flex; /* Чтобы черточка и текст были в ряд */
+  align-items: center; /* Чтобы черточка была на уровне первой строки */
+  gap: 10px;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.375rem;
+}
+
+.blog-more-list-item.numeric {
+  margin-top: 20px;
+}
+
+.blog-more-main-item-header {
+  margin-top: 3.125rem;
+}
 
 @media (max-width: 1700px) {
   html {
@@ -1269,21 +1363,27 @@ body {
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    padding: 2.2rem 2.5rem;
+
+    /* ИСПРАВЛЕНИЕ: Центрируем и задаем фиксированный шаг */
+    justify-content: center;
+    align-items: center;
+    gap: 6px; /* Фиксированное расстояние между линиями */
+
+    padding: 0; /* Убираем 2.2rem, они «сплющивали» иконку при скролле */
     border-right: 1px solid rgba(235, 235, 240, 0.2);
+    cursor: pointer;
   }
   .navbar-light .mobile-menu-line {
     background-color: black;
   }
   .mobile-menu-line {
     background-color: #fff;
-    height: 1px;
-    width: 100%;
-    transition: tranvsform 0.2s;
+    height: 2px; /* Сделаем чуть толще (2px), на 1px часто видны зазубрины */
+    width: 24px; /* Фиксированная ширина, чтобы иконка не была на всё окно */
+    transition: transform 0.2s; /* Исправил опечатку в tranvsform */
   }
   .mobile-menu-line:nth-child(2) {
-    width: 80%;
+    width: 25%;
   }
   .navbar-button {
     padding-left: 2.7rem;

@@ -30,7 +30,6 @@ const closeMenu = (event) => {
   menu.classList.remove("is-open"); // удалить класс is-open
   mMenuToggle.classList.remove("close-menu");
   document.body.style.overflow = "";
-  lightModeOff();
 };
 
 window.addEventListener("scroll", () => {
