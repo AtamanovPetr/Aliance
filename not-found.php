@@ -1,5 +1,3 @@
-<?php $features_style = "features-white";
-$blog_header = 'Блог экспертов в области производства' ?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -16,7 +14,7 @@ $blog_header = 'Блог экспертов в области производс
     <link rel="stylesheet" href="./css/style.css" />
     <title>Aliance Production</title>
   </head>
-  <body class="front-page">
+  <body>
 
     <div class="mobile-menu">
       <ul class="mobile-menu-nav">
@@ -72,7 +70,7 @@ $blog_header = 'Блог экспертов в области производс
           <a href="./blog.php" class="mobile-menu-link">Новости</a>
         </li>
         <li class="mobile-menu-nav-item">
-          <a href="./contacts.php" class="mobile-menu-link">Контакты</a>
+          <a href="#" class="mobile-menu-link">Контакты</a>
         </li>
       </ul>
       <a href="tel:+74996861014" class="mobile-phone">+7 (499) 686-10-14</a>
@@ -106,7 +104,7 @@ $blog_header = 'Блог экспертов в области производс
       </div>
     </div>
 
-    <nav class="navbar">
+    <nav class="navbar navbar-light">
       <a href="#" class="mobile-menu-toggle">
         <div class="mobile-menu-line"></div>
         <div class="mobile-menu-line"></div>
@@ -134,7 +132,7 @@ $blog_header = 'Блог экспертов в области производс
           <a href="./blog.php" class="header-nav-link">Новости</a>
         </li>
         <li class="header-nav-item">
-          <a href="./contacts.php" class="header-nav-link">Контакты</a>
+          <a href="#" class="header-nav-link">Контакты</a>
         </li>
       </ul>
       <div class="header-phone">
@@ -153,47 +151,144 @@ $blog_header = 'Блог экспертов в области производс
       </button>
     </nav>
 
-    <header class="header header-image">
+    <section class="not-found">
       <div class="container">
-        <div class="header-content">
-          <div class="seporator"></div>
-          <h1 class="header-title">
-            <?='Комплексное обеспечение товарами и расходными материалами бизнеса';?>
-          </h1>
-          <p class="header-text">
-            Высокий уровень вовлечения представителей целевой аудитории является
-            четким доказательством простого факта: высококачественный прототип
-            будущего проекта напрямую зависит от анализа существующих паттернов
-            поведения.
-          </p>
-          <div data-toggle="modal" class="header-content-button button">Подробнее о компании</div>
+        <div class="not-found-wrapper">
+          <div class="not-found-number">
+          404
         </div>
-
-        <?php include_once('./templates/features-slider.php') ?>
-        
-      </div>
-    </header>
-
-    <?php include_once('./templates/working-process.php');?>
-
-    <section class="section production">
-      <div class="container">
-        <div class="seporator"></div>
-        <h2 class="section-title production-title">Контрактное производство</h2>
-        <? include_once('./templates/production-cards.php'); ?>
+        <h2>Страница не найдена</h2>
+        <p>Мы не смогли найти страницу с таким адресом, попробуйте перейти на главную или напишите нам.</p>
+        <a href="./index.php">
+          <button class="button">
+            <span class="button-text"> Вернуться на главную </span>
+          </button>
+        </a>
+        </div>
       </div>
     </section>
 
-    <?php $block_title = "Собственные торговые марки"; include_once('./templates/trademarks-block.php') ?>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top">
+          <svg class="footer-logo" width="140" height="44">
+            <use href="img/sprite.svg#logo"></use>
+          </svg>
+          <a href="tel:+74996861014" class="footer-phone">+7 (499) 686-10-14</a>
+          <div class="footer-info">
+            <svg class="mark-icon" width="24" height="24">
+              <use href="img/sprite.svg#mark"></use>
+            </svg>
+            <address class="footer-info-address">
+              г. Москва, Холодильный пер. 4к1с8
+            </address>
+          </div>
+          <div class="footer-info">
+            <svg class="email-icon" width="24" height="24">
+              <use href="img/sprite.svg#mail"></use>
+            </svg>
+            <a href="mailto:a.dragunov@tdaliance.ru" class="footer-info-email"
+              >a.dragunov@tdaliance.ru</a
+            >
+          </div>
+          <div class="footer-social">
+            <a href="#" class="footer-social-link">
+              <svg class="footer-social-icon" width="24" height="24">
+                <use href="img/sprite.svg#vk"></use>
+              </svg>
+            </a>
+            <a href="#" class="footer-social-link">
+              <svg class="footer-social-icon" width="24" height="24">
+                <use href="img/sprite.svg#inst"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <!-- /.footer-top -->
+      </div>
+      <hr color="#ebebf0" class="footer-seporator" />
+      <div class="container">
+        <div class="footer-bottom">
+          <div class="footer-menu-wrapper">
+            <h2 class="footer-menu-title">Контрактное производство</h2>
+            <ul class="footer-menu-list footer-menu-column-2">
+              <li class="footer-menu-item">
+                <a href="#" class="footer-menu-link">Автомобильная химия</a>
+              </li>
+              <li class="footer-menu-item">
+                <a href="#" class="footer-menu-link">Бытовая химия</a>
+              </li>
+              <li class="footer-menu-item">
+                <a href="#" class="footer-menu-link"
+                  >Дезинфицирующие средства</a
+                >
+              </li>
+              <li class="footer-menu-item">
+                <a href="#" class="footer-menu-link">Пищевые аэрозоли</a>
+              </li>
+              <li class="footer-menu-item">
+                <a href="#" class="footer-menu-link">Косметическая продукция</a>
+              </li>
+              <li class="footer-menu-item">
+                <a href="#" class="footer-menu-link">Краски аэрозольные</a>
+              </li>
+            </ul>
+          </div>
 
-    <?php include_once('./templates/founder.php');?>
+          <!-- /.footer-menu-wrapper -->
+          <div class="footer-menu-wrapper">
+            <h2 class="footer-menu-title">Собственные марки</h2>
+            <ul class="footer-menu-list">
+              <li class="footer-menu-item">
+                <a href="#" class="footer-menu-link">Автохимия AG-Tech</a>
+              </li>
+              <li class="footer-menu-item">
+                <a href="#" class="footer-menu-link">Автохимия AP</a>
+              </li>
+            </ul>
+          </div>
 
-<?php
- include_once('./templates/clients.php');
-  include_once('./templates/blog-templ.php');
- ?>
-
-
-
-
-    <?php include_once('footer.php');?>
+          <div class="footer-menu-wrapper">
+            <ul class="footer-menu-list footer-menu-list-last">
+              <li class="footer-menu-item">
+                <a href="#" class="footer-menu-link footer-menu-link-bold"
+                  >О компании</a
+                >
+              </li>
+              <li class="footer-menu-item">
+                <a href="#" class="footer-menu-link footer-menu-link-bold"
+                  >Новости</a
+                >
+              </li>
+              <li class="footer-menu-item">
+                <a href="#" class="footer-menu-link footer-menu-link-bold"
+                  >Контакты</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- /.footer-bottom -->
+      </div>
+      <hr color="#ebebf0" class="footer-seporator" />
+      <div class="container">
+        <div class="footer-wrapper">
+          <div class="footer-legal">
+            <p class="copyright">
+              &copy; <? echo date('d.m.Y')?> «Aliance Production». Все права защищены.
+            </p>
+            <a href="./policy.php" class="footer-policy"> Политика конфиденциальности </a>
+          </div>
+          <div class="footer-author">
+            <span class="made-in">Сделано в</span>
+            <svg class="footer-social-icon" width="52" height="11">
+              <use href="img/sprite.svg#ruso"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </footer>
+<script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
