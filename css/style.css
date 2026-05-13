@@ -1314,6 +1314,8 @@ body {
   margin-top: 6.25rem;
 }
 
+/* About page */
+
 @media (max-width: 1700px) {
   html {
     font-size: 14px;
