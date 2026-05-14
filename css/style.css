@@ -771,6 +771,9 @@ body {
   padding-bottom: 3.125rem;
   padding-top: 3.125rem;
 }
+.footer-bottom a {
+  text-decoration: none;
+}
 .footer-menu-title {
   margin-top: 0;
   margin-bottom: 1.875rem;

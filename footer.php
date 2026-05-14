@@ -60,9 +60,11 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-top">
-          <svg class="footer-logo" width="140" height="44">
-            <use href="img/sprite.svg#logo"></use>
-          </svg>
+          <a href="./index.php">
+            <svg class="footer-logo" width="140" height="44">
+              <use href="img/sprite.svg#logo"></use>
+            </svg>
+          </a>
           <a href="tel:+74996861014" class="footer-phone">+7 (499) 686-10-14</a>
           <div class="footer-info">
             <svg class="mark-icon" width="24" height="24">
@@ -99,10 +101,12 @@
       <div class="container">
         <div class="footer-bottom">
           <div class="footer-menu-wrapper">
-            <h2 class="footer-menu-title">Контрактное производство</h2>
+            <a href="./contracts.php">
+              <h2 class="footer-menu-title">Контрактное производство</h2>
+            </a>
             <ul class="footer-menu-list footer-menu-column-2">
               <li class="footer-menu-item">
-                <a href="#" class="footer-menu-link">Автомобильная химия</a>
+                <a href="./auto-chem.php" class="footer-menu-link">Автомобильная химия</a>
               </li>
               <li class="footer-menu-item">
                 <a href="#" class="footer-menu-link">Бытовая химия</a>
@@ -126,10 +130,12 @@
 
           <!-- /.footer-menu-wrapper -->
           <div class="footer-menu-wrapper">
-            <h2 class="footer-menu-title">Собственные марки</h2>
+            <a href="./trademarks.php">
+              <h2 class="footer-menu-title">Собственные марки</h2>
+            </a>
             <ul class="footer-menu-list">
               <li class="footer-menu-item">
-                <a href="#" class="footer-menu-link">Автохимия AG-Tech</a>
+                <a href="./auto-him.php" class="footer-menu-link">Автохимия AG-Tech</a>
               </li>
               <li class="footer-menu-item">
                 <a href="#" class="footer-menu-link">Автохимия AP</a>
@@ -140,17 +146,17 @@
           <div class="footer-menu-wrapper">
             <ul class="footer-menu-list footer-menu-list-last">
               <li class="footer-menu-item">
-                <a href="#" class="footer-menu-link footer-menu-link-bold"
+                <a href="./about.php" class="footer-menu-link footer-menu-link-bold"
                   >О компании</a
                 >
               </li>
               <li class="footer-menu-item">
-                <a href="#" class="footer-menu-link footer-menu-link-bold"
+                <a href="./blog.php" class="footer-menu-link footer-menu-link-bold"
                   >Новости</a
                 >
               </li>
               <li class="footer-menu-item">
-                <a href="#" class="footer-menu-link footer-menu-link-bold"
+                <a href="./contacts.php" class="footer-menu-link footer-menu-link-bold"
                   >Контакты</a
                 >
               </li>
