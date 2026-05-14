@@ -16,10 +16,8 @@ $url = "https://api.telegram.org/bot{$token}/sendMessage?chat_id={$chat_id}&pars
 $sendToTelegram = @file_get_contents($url);
 
 if ($sendToTelegram) {
-    echo "Некит"; 
+    echo "Некит";
 } else {
     echo "Error";
 }
 ?>
-
-

@@ -4,6 +4,7 @@
 @font-face {
   font-family: "Bebas Neue Book";
   src: url("../fonts/BebasNeueBook.woff") format("woff");
+  font-display: swap;
   font-weight: normal;
   font-style: normal;
 }
@@ -82,7 +83,7 @@ body {
   padding-top: 5.875rem;
 }
 .header-image {
-  background-image: url(../img/bg.png);
+  background-image: url(../img/bg.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -1040,7 +1041,7 @@ body {
 
 .distribute {
   padding-top: 6.25rem;
-  background-image: url(/img/distribute.jpg);
+  background-image: url(/img/distribute.webp);
   padding-bottom: 6.25rem;
 }
 .distribute-content {
@@ -1102,6 +1103,9 @@ body {
   margin-top: 6.25rem;
 }
 /* Avto-chem page */
+.create-margin {
+  margin-bottom: 9.375rem;
+}
 .create-img {
   position: absolute;
   right: 0;
@@ -1149,7 +1153,7 @@ body {
 
 /* Страница blog-more */
 .title.blog-more-bg {
-  background-image: url("/img/blog-more-bg.png");
+  background-image: url("/img/blog-more-bg.webp");
   color: #fff;
 }
 .blog-more-bg .bread-main,
