@@ -1,3 +1,6 @@
+@import url("normalize.css");
+@import url("swiper-bundle.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -5,7 +8,7 @@
   font-family: "Bebas Neue Book";
   src: url("../fonts/BebasNeueBook.woff") format("woff");
   font-display: swap;
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
 }
 html {
@@ -68,7 +71,6 @@ body {
 .navbar-light .header-logo-path {
   fill: rgba(41, 45, 51, 1);
 }
-
 .header-nav {
   display: flex;
   align-items: center;
@@ -102,7 +104,7 @@ body {
 .header-logo {
   display: flex;
   align-items: center;
-  padding: 0px 3.125rem;
+  padding: 0 3.125rem;
   height: 100%;
   border-right: 1px solid rgba(235, 235, 240, 0.2);
 }
@@ -145,13 +147,11 @@ body {
   gap: 0.9375rem;
   margin-right: 3.125rem;
 }
-
 .header-phone-link {
   text-decoration: none;
   font-size: 16px;
   color: inherit;
 }
-
 .button {
   padding: 1.5625rem 2.875rem;
   font-size: 1rem;
@@ -170,7 +170,6 @@ body {
   flex-shrink: 0;
   height: 100%;
 }
-
 .header-button {
   height: 100%;
 }
@@ -181,13 +180,11 @@ body {
 .button:hover {
   background-color: #3a71d1;
 }
-
 .seporator {
   width: 9.375rem;
   height: 2px;
   background-color: rgba(92, 142, 230, 1);
 }
-
 .header-content {
   padding-top: 9.375rem;
   position: relative;
@@ -223,7 +220,6 @@ body {
   color: #fff;
   position: relative;
 }
-
 .header-features-item {
   padding: 1.875rem 3.125rem;
   height: auto;
@@ -235,7 +231,6 @@ body {
   display: none;
   height: 44px;
 }
-
 .slider-button-next,
 .slider-button-prev {
   height: 100%;
@@ -247,7 +242,6 @@ body {
   cursor: pointer;
   z-index: 2;
 }
-
 .header-features-text {
   font-size: 1rem;
   font-weight: 400;
@@ -268,7 +262,6 @@ body {
   margin-top: 1.5625rem;
   letter-spacing: 0.35px;
 }
-
 .steps {
   display: flex;
   list-style: none;
@@ -304,7 +297,6 @@ body {
   margin-bottom: 0.625rem;
   letter-spacing: 0.27px;
 }
-
 .steps-text {
   color: rgba(130, 138, 153, 1);
   font-size: 1rem;
@@ -325,7 +317,6 @@ body {
   line-height: 1.375rem;
   letter-spacing: 0.4px;
 }
-
 .button-link::before {
   content: "";
   height: 1px;
@@ -334,17 +325,14 @@ body {
   margin-right: 1.25rem;
   transition: width 0.3s ease;
 }
-
 .button-link:hover::before {
   width: 3.75rem;
 }
-
 .primary-buttons-wrapper {
   display: flex;
   height: 60px;
   justify-content: flex-end;
 }
-
 .primary-button-next,
 .primary-button-prev {
   background-color: rgba(92, 142, 230, 1);
@@ -358,12 +346,10 @@ body {
 .steps-buttons {
   display: none;
 }
-
 .cards {
   display: flex;
   flex-wrap: wrap;
 }
-
 .card {
   text-decoration: none;
   flex-basis: 33%;
@@ -421,9 +407,7 @@ body {
   grid-template-columns: 180px 1fr;
   grid-template-rows: auto 2fr;
   grid-column-gap: 2.7rem;
-  grid-template-areas:
-    "logo title title"
-    "logo text text";
+  grid-template-areas: "logo title title" "logo text text";
 }
 .trademark-card-logo {
   fill: #828a99;
@@ -455,7 +439,6 @@ body {
 .trademark-card:hover .trademark-card-title {
   color: #5c8ee6;
 }
-
 .founder {
   min-height: 41.25rem;
   position: relative;
@@ -468,7 +451,6 @@ body {
   object-fit: cover;
   top: 0;
 }
-
 .founder-content {
   padding-top: 50px;
   max-width: 720px;
@@ -486,14 +468,12 @@ body {
   margin-top: 40px;
   letter-spacing: 0.1px;
 }
-
 .founder-text {
   color: var(--txt2, rgba(130, 138, 153, 1));
   font-size: 1rem;
   font-weight: 400;
   line-height: 160%;
 }
-
 .clients {
   margin-top: 9.125rem;
 }
@@ -523,7 +503,6 @@ body {
 .clients-content {
   flex-basis: 50%;
 }
-
 .clients-logo-list {
   padding-top: 32px;
   display: flex;
@@ -547,7 +526,6 @@ body {
 .clients-logo-item:hover {
   filter: grayscale(0%);
 }
-
 .blog {
   margin-top: 8.75rem;
 }
@@ -599,18 +577,15 @@ body {
   margin-top: 1.875rem;
   justify-content: space-between;
 }
-
 .bg-grey {
   background-color: #f0f2f5;
 }
-
 .section-cta {
   position: relative;
   padding-top: 4.375rem;
   padding-bottom: 6.25rem;
   margin-top: 13.75rem;
 }
-
 .cta-image {
   position: absolute;
   left: 0;
@@ -618,7 +593,6 @@ body {
   max-width: 45rem;
   width: 50%;
 }
-
 .cta-form-wrapper {
   display: flex;
   justify-content: flex-end;
@@ -693,7 +667,6 @@ body {
   background-color: inherit;
   padding: 0 10px;
 }
-
 .cta-form-footer {
   display: flex;
   margin-top: 1.875rem;
@@ -720,7 +693,6 @@ body {
   line-height: 160%;
   margin: 0;
 }
-
 .footer-top {
   display: flex;
   align-items: center;
@@ -728,7 +700,6 @@ body {
   padding-top: 3.125rem;
   padding-bottom: 3.125rem;
 }
-
 .footer-info {
   display: flex;
   align-items: center;
@@ -747,7 +718,6 @@ body {
   width: 12.5rem;
   height: 3.75rem;
 }
-
 .footer-phone {
   color: var(--txt, rgba(41, 45, 51, 1));
   font-size: 32px;
@@ -801,7 +771,6 @@ body {
   line-height: 160%;
   margin-bottom: 0.9375rem;
 }
-
 .footer-menu-link-bold {
   color: var(--txt, rgba(41, 45, 51, 1));
   font-size: 1rem;
@@ -809,11 +778,9 @@ body {
   line-height: 160%;
   margin-bottom: 30px;
 }
-
 .footer-menu-wrapper:last-child {
   margin-left: 5rem;
 }
-
 .footer-wrapper,
 .footer-legal {
   display: flex;
@@ -821,7 +788,6 @@ body {
   justify-content: space-between;
   gap: 75px;
 }
-
 .copyright,
 .footer-policy,
 .made-in {
@@ -830,13 +796,11 @@ body {
   font-weight: 400;
   line-height: 160%;
 }
-
 .footer-author {
   display: flex;
   align-items: center;
   gap: 0.625rem;
 }
-
 .modal {
   opacity: 0;
   visibility: hidden;
@@ -850,7 +814,6 @@ body {
   display: flex;
   transition: opacity 0.2s;
 }
-
 .modal.is-open {
   transform: translateX(0);
   visibility: visible;
@@ -861,7 +824,6 @@ body {
   transform: translateY(0);
   opacity: 1;
 }
-
 .modal-dialog {
   margin: auto;
   max-width: 28.75rem;
@@ -903,22 +865,17 @@ body {
   line-height: 160%;
   color: var(--txt2, rgba(130, 138, 153, 1));
 }
-
 .modal-input-group {
   background-color: #fff;
 }
-
 .modal-form-footer {
   margin-top: 1.875rem;
 }
-
 .modal-form-button {
   margin-bottom: 1.5rem;
   display: block;
   width: 100%;
 }
-
-/* Стили для заголовков внутренних страниц */
 .title-wrappp {
   position: relative;
 }
@@ -942,56 +899,40 @@ body {
   right: 0;
   max-height: 15rem;
 }
-/* Контейнер для крошек */
-.bread {
-  display: flex; /* Выстраивает элементы в одну строку */
-  align-items: center;
-  flex-wrap: wrap; /* Если крошек много, они перенесутся на новую строку */
-  gap: 8px; /* Расстояние между элементами */
-}
-
-/* Все ссылки по умолчанию серые */
-/* Контейнер: выравниваем всё в ряд по центру */
 .bread {
   display: flex;
   align-items: center;
-  gap: 12px; /* Отступы между словами и палочкой */
+  flex-wrap: wrap;
+  gap: 8px;
 }
-
-/* Стили горизонтальной палочки */
+.bread {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
 .line-separator {
   display: inline-block;
-  width: 15px; /* Длина палочки — подберите по макету */
-  height: 1px; /* Толщина линии */
-  background-color: #999; /* Цвет палочки (серый) */
-  flex-shrink: 0; /* Чтобы палочка не сжималась */
+  width: 15px;
+  height: 1px;
+  background-color: #999;
+  flex-shrink: 0;
 }
-
-/* Ссылки (кроме последней) */
 .bread-main,
 .bread-second {
   text-decoration: none;
-  color: #999; /* Серый цвет */
+  color: #999;
   font-size: 14px;
   transition: color 0.3s;
 }
-
-/* Последняя крошка (активная) */
 .active {
-  color: #000; /* Черный цвет */
+  color: #000;
 }
-
-/* Ховер для ссылок, которые можно нажать */
 .bread-main:hover,
 .bread-second:hover:not(.active) {
   color: #666;
 }
-
-/* конец */
-
-/* Features Slider*/
 .features-white .header-features-text {
-  color: #ffffff;
+  color: #fff;
 }
 .features-black .header-features-text {
   color: var(--txt, rgba(41, 45, 51, 1));
@@ -1000,10 +941,6 @@ body {
   fill: var(--txt, rgba(41, 45, 51, 1));
   stroke: var(--txt, rgba(41, 45, 51, 1));
 }
-
-/* Картинка в заголовке */
-
-/* Секция с картинкой и заголовком auto ag-tech */
 .auto-him-main {
   margin-top: 6.25rem;
   margin-bottom: 9.375rem;
@@ -1012,7 +949,6 @@ body {
   display: flex;
   gap: 120px;
 }
-
 .auto-him-main-wrap-item-title {
   font-size: 3.75rem;
 }
@@ -1027,18 +963,14 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.375rem;
-  letter-spacing: 0%;
+  letter-spacing: 0;
   text-align: left;
 }
-
 .auto-him-wrap-img {
   width: 40%;
   height: 100%;
   object-fit: cover;
 }
-
-/* Section Distribute */
-
 .distribute {
   padding-top: 6.25rem;
   background-image: url(/img/distribute.webp);
@@ -1047,7 +979,6 @@ body {
 .distribute-content {
   max-width: 45rem;
 }
-
 .distribute-content-text {
   color: var(--txt2, rgba(130, 138, 153, 1));
   font-family: "Noto Sans";
@@ -1055,7 +986,7 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
-  letter-spacing: 0%;
+  letter-spacing: 0;
   text-align: left;
   margin-bottom: 1.875rem;
 }
@@ -1069,9 +1000,6 @@ body {
   gap: 0.625rem;
   align-items: center;
 }
-
-/* Section Explore */
-
 .explore-title {
   max-width: 37.5rem;
   margin-bottom: 1.25rem;
@@ -1088,7 +1016,7 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.375rem;
-  letter-spacing: 0%;
+  letter-spacing: 0;
   text-align: left;
   max-width: 39.6875rem;
 }
@@ -1098,11 +1026,9 @@ body {
 .explore-footer {
   justify-content: flex-end;
 }
-/* Contracts page */
 .contract-cards {
   margin-top: 6.25rem;
 }
-/* Avto-chem page */
 .create-margin {
   margin-bottom: 9.375rem;
 }
@@ -1118,8 +1044,6 @@ body {
   align-items: center;
   min-height: 660px;
 }
-
-/* Секция species */
 .species {
   margin-top: 9.375rem;
 }
@@ -1136,8 +1060,6 @@ body {
 .species-text {
   max-width: 52.5rem;
 }
-
-/* Страница news */
 .news {
   margin-top: 6.25rem;
 }
@@ -1150,15 +1072,13 @@ body {
   max-width: 43.75rem;
   margin: 0;
 }
-
-/* Страница blog-more */
 .title.blog-more-bg {
   background-image: url("/img/blog-more-bg.webp");
   color: #fff;
 }
 .blog-more-bg .bread-main,
 .blog-more-bg .bread-second {
-  color: #ffffff;
+  color: #fff;
 }
 .blog-more-main {
   margin-top: 6.25rem;
@@ -1178,19 +1098,16 @@ body {
   gap: 10px;
 }
 .vk-wrapper a {
-  color: #5b8dff; /* Базовый цвет иконок (т.к. в спрайте currentColor) */
-  transition: color 0.3s ease; /* Плавная смена цвета */
+  color: #5b8dff;
+  transition: color 0.3s ease;
   text-decoration: none;
   border: 1px solid var(--sep, rgba(235, 235, 240, 1));
   padding: 0.8125rem;
 }
-/* Ховер эффект: красим в черный */
 .vk-wrapper a:hover {
-  color: #000000; /* Иконка станет черной при наведении */
+  color: #000;
   border: 1px solid #5b8dff;
 }
-
-/* Убедимся, что SVG наследует цвет от ссылки */
 .vk-icon {
   fill: currentColor;
 }
@@ -1201,7 +1118,7 @@ body {
   font-size: 1rem;
   font-weight: 600;
   line-height: 1.375rem;
-  letter-spacing: 0%;
+  letter-spacing: 0;
   text-align: left;
 }
 .blog-more-main-item h2 {
@@ -1217,7 +1134,7 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
-  letter-spacing: 0%;
+  letter-spacing: 0;
   text-align: left;
 }
 .blog-more-list-header {
@@ -1227,7 +1144,7 @@ body {
   font-size: 20px;
   font-weight: 400;
   line-height: 27px;
-  letter-spacing: 0%;
+  letter-spacing: 0;
   text-align: left;
 }
 .blog-more-list-wrapper {
@@ -1239,23 +1156,19 @@ body {
   gap: 15px;
 }
 .blog-more-list-item {
-  display: flex; /* Чтобы черточка и текст были в ряд */
-  align-items: center; /* Чтобы черточка была на уровне первой строки */
+  display: flex;
+  align-items: center;
   gap: 10px;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.375rem;
 }
-
 .blog-more-list-item.numeric {
   margin-top: 20px;
 }
-
 .blog-more-main-item-header {
   margin-top: 3.125rem;
 }
-
-/* Policy page */
 .policy-text {
   margin-top: 6.25rem;
   margin-bottom: 250px;
@@ -1267,11 +1180,9 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
-  letter-spacing: 0%;
+  letter-spacing: 0;
   text-align: left;
 }
-
-/* Not-found page */
 .not-found {
   margin-top: 12.5rem;
   display: flex;
@@ -1298,7 +1209,7 @@ body {
   font-size: 28px;
   font-weight: 400;
   line-height: 38px;
-  letter-spacing: 0%;
+  letter-spacing: 0;
   margin-bottom: 20px;
 }
 .not-found-wrapper p {
@@ -1310,19 +1221,14 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
-  letter-spacing: 0%;
+  letter-spacing: 0;
 }
-
-/* Contacts page */
 .contacts {
   margin-bottom: 9.375rem;
 }
 .contacts-map {
   margin-top: 6.25rem;
 }
-
-/* About page */
-
 @media (max-width: 1700px) {
   html {
     font-size: 14px;
@@ -1334,7 +1240,6 @@ body {
     max-width: 85rem;
   }
 }
-
 @media (max-width: 1460px) {
   html {
     font-size: 13px;
@@ -1422,7 +1327,6 @@ body {
     gap: 0;
   }
 }
-
 @media (max-width: 992px) {
   html {
     font-size: 12px;
@@ -1445,13 +1349,10 @@ body {
     height: 100%;
     display: flex;
     flex-direction: column;
-
-    /* ИСПРАВЛЕНИЕ: Центрируем и задаем фиксированный шаг */
     justify-content: center;
     align-items: center;
-    gap: 6px; /* Фиксированное расстояние между линиями */
-
-    padding: 0; /* Убираем 2.2rem, они «сплющивали» иконку при скролле */
+    gap: 6px;
+    padding: 0;
     border-right: 1px solid rgba(235, 235, 240, 0.2);
     cursor: pointer;
   }
@@ -1460,9 +1361,9 @@ body {
   }
   .mobile-menu-line {
     background-color: #fff;
-    height: 2px; /* Сделаем чуть толще (2px), на 1px часто видны зазубрины */
-    width: 24px; /* Фиксированная ширина, чтобы иконка не была на всё окно */
-    transition: transform 0.2s; /* Исправил опечатку в tranvsform */
+    height: 2px;
+    width: 24px;
+    transition: transform 0.2s;
   }
   .mobile-menu-line:nth-child(2) {
     width: 25%;
@@ -1475,7 +1376,7 @@ body {
     display: none;
   }
   .navbar-button .button-icon {
-    fill: #ffffff;
+    fill: #fff;
     display: block;
   }
   .mobile-menu {
@@ -1632,7 +1533,6 @@ body {
     font-size: 12px;
   }
 }
-
 @media (max-width: 576px) {
   .header-content {
     padding-top: 4rem;
@@ -1709,9 +1609,7 @@ body {
     margin-top: 0rem;
   }
   .trademark-card {
-    grid-template-areas:
-      "logo title"
-      "text text";
+    grid-template-areas: "logo title" "text text";
   }
   .trademark-card-title {
     text-align: right;
@@ -1873,7 +1771,6 @@ body {
     width: 160px;
     height: 50px;
   }
-
   .footer-phone {
     padding-top: 1.5rem;
     font-size: 28px;
